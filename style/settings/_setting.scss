@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1150px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+input,
+textarea,
+select,
+button,
+option {
+    border: none;
+}

@@ -1,0 +1,76 @@
+.contact {
+    height: 500px;
+    background-color: $light;
+    width: 100%;
+    padding-block: 117px 70px;
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        gap: 125px;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+
+        &_title {
+            color: #000;
+            font-family: $LB;
+            font-size: $lg;
+        }
+
+        &_text {
+            color: #000;
+            text-align: justify;
+            font-family: $LR;
+            font-size: $sm;
+            line-height: 140%;
+            width: 434px;
+        }
+    }
+
+    &-form {
+        max-width: 540px;
+        width: 100%;
+
+        &_form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+
+            &-name {
+                width: 255px;
+                padding: 20px 30px;
+                border-radius: 6px;
+                border: 1px solid var(--Gray-1, #333);
+            }
+
+            &-tel {
+                width: 100%;
+                padding: 20px 30px;
+                border-radius: 6px;
+                border: 1px solid var(--Gray-1, #333);
+
+            }
+
+            .select {
+                padding: 20px 30px;
+                width: 100%;
+                padding: 0;
+
+                select {
+                    width: 100%;
+                    padding: 20px 30px;
+                    border-radius: 6px;
+                    border: 1px solid var(--Gray-1, #333);
+                    -webkit-appearance: none;
+                }
+
+            }
+        }
+    }
+}

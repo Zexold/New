@@ -1,0 +1,102 @@
+.management {
+    width: 100%;
+    padding-block: 94px;
+
+    @include media(768) {
+        padding-block: 60
+    }
+
+    &-content {
+        @include flexbetween;
+        gap: 60px;
+
+        @include media(700) {
+            flex-direction: column;
+        }
+
+        &_info {
+            max-width: 445px;
+            width: 100%;
+        }
+    }
+}
+
+.content-info {
+    &_title {
+        color: $secondary;
+        font-family: $LB;
+        font-size: $lg;
+        margin-bottom: 42px;
+
+        @include media(993) {
+            font-size: 30px;
+        }
+        @include media(780) {
+            margin-bottom: 25px;
+        }
+        
+        @include media(768) {
+            font-size: 24px;
+        }
+        @include media(576) {
+            font-size: 18px;
+        }
+
+    }
+
+    &_text {
+        color: #000;
+        text-align: justify;
+        font-family: $LR;
+        font-size: $sm;
+        line-height: 140%;
+        margin-bottom: 16px;
+
+        @include media(700) {
+            text-align: center;
+        }
+    }
+
+    &_link {
+        color: $primary;
+        text-align: justify;
+        font-family: $LR;
+        font-size: $sm;
+        line-height: 140%;
+    }
+
+    @include media(700) {
+        text-align: center;
+    }
+}
+
+.content-media {
+    border-radius: 15px;
+
+    position: relative;
+    z-index: 1;
+
+    &_img {
+        width: 100%;
+
+    }
+
+    &_play {
+        width: 66px;
+        height: 66px;
+        background-color: $primary;
+        border-radius: 50%;
+        @include flexcenter;
+        position: absolute;
+        z-index: 2;
+        left: -33px;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        @include media(700) {
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    
+}
